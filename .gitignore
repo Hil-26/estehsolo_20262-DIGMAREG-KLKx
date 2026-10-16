@@ -1,5 +1,46 @@
-# Object file
-*.o
+# ========================================================
+# GITIGNORE - ES TEH SOLO (Java 21, Maven & Tomcat)
+# ========================================================
 
-# Ada Library Information
-*.ali
+# 1. Maven Build Artifacts
+target/
+*.war
+*.jar
+*.class
+
+# 2. Embedded Tomcat Work & Temp Dirs
+tomcat.*/
+target/tomcat/
+work/
+temp/
+
+# 3. Local Databases (H2 embedded files)
+*.mv.db
+*.trace.db
+
+# 4. Temporary / Scratch files
+test_cart_cookie.txt
+*.log
+*.tmp
+*.bak
+
+# 5. IDE & Editor configurations
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+*.swo
+
+# 6. Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 7. Environment Variables / Secrets
+.env
+.env.local
